@@ -42,7 +42,7 @@ export const startCommand: CommandHandler = async (ctx: BotContext) => {
       parse_mode: 'HTML',
       reply_markup: {
         inline_keyboard: [
-          [{ text: '🔗 Open Mini App', web_app: { url: 'https://dev-front.ru.tuna.am' } }],
+          [{ text: '🔗 Open Mini App', web_app: { url: 'https://app.ton-quant.com' } }],
         ],
       },
     });
