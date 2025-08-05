@@ -1,0 +1,72 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Grammy.js Telegram Bot Template",
+  "description": "A comprehensive Telegram bot template built with Grammy.js framework, TypeScript for type safety, and tsx for fast development",
+  "folders": [
+    "src/",
+    "docs/"
+  ],
+  "excludeFolders": [
+    "node_modules",
+    "dist",
+    ".git",
+    "coverage",
+    ".next",
+    ".tsx"
+  ],
+  "excludeFiles": [
+    "package-lock.json",
+    "*.log",
+    "*.env",
+    "*.env.local",
+    "*.map"
+  ],
+  "rules": [
+    "Use TypeScript for all development with strict typing",
+    "Use tsx for fast TypeScript execution and development",
+    "Use Grammy.js framework for Telegram Bot API interactions",
+    "Load .env file from project root (../../../.env relative to bot config)",
+    "Follow async/await patterns for all asynchronous operations",
+    "Implement comprehensive error handling and structured logging with Winston",
+    "Use conversation flows for complex user interactions",
+    "Apply rate limiting to prevent spam and abuse",
+    "Structure code with clear separation: handlers, middleware, services, and utilities",
+    "Use environment variables for all sensitive configuration",
+    "Implement graceful shutdown handling for production deployment",
+    "Follow Grammy.js best practices and modern TypeScript patterns",
+    "Use tsx watch mode for development with hot reloading",
+    "Implement proper session management with in-memory storage",
+    "Apply security best practices for Telegram bot development",
+    "Use context7 for enhanced development experience and AI assistance",
+    "Follow RESTful API patterns when interacting with external services"
+  ],
+  "architecture": {
+    "framework": "Grammy.js",
+    "runtime": "tsx",
+    "language": "TypeScript",
+    "patterns": [
+      "Middleware pattern for request processing",
+      "Handler pattern for command organization",
+      "Service pattern for business logic",
+      "Factory pattern for bot configuration",
+      "Observer pattern for event handling",
+      "Dependency injection for service management"
+    ]
+  },
+  "development": {
+    "devCommand": "npm run dev:watch",
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "lintCommand": "npm run lint"
+  },
+  "features": [
+    "User session management with in-memory storage",
+    "Command handling with middleware support",
+    "Rate limiting and spam protection",
+    "Conversation state management",
+    "Error handling and logging",
+    "Environment-based configuration",
+    "Hot reloading development setup",
+    "Production-ready deployment structure"
+  ]
+} 

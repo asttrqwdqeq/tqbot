@@ -1,0 +1,43 @@
+{
+  "name": "grammy-prisma-bot",
+  "version": "1.0.0",
+  "description": "Grammy.js Telegram bot template with TypeScript and tsx",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dev:watch": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "grammy",
+    "typescript",
+    "tsx",
+    "context7"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@grammyjs/conversations": "^2.1.0",
+    "@grammyjs/parse-mode": "^2.2.0",
+    "@grammyjs/runner": "^2.0.3",
+    "axios": "^1.10.0",
+    "dotenv": "^17.2.0",
+    "grammy": "^1.37.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
