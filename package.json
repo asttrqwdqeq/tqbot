@@ -4,11 +4,14 @@
   "description": "Grammy.js Telegram bot template with TypeScript and tsx",
   "main": "dist/index.js",
   "type": "commonjs",
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "dev:watch": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node -r module-alias/register dist/index.js",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts"
@@ -30,6 +33,7 @@
     "axios": "^1.10.0",
     "dotenv": "^17.2.0",
     "grammy": "^1.37.0",
+    "module-alias": "^2.2.3",
     "winston": "^3.17.0"
   },
   "devDependencies": {
