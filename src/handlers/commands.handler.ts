@@ -35,6 +35,7 @@ export const startCommand: CommandHandler = async (ctx: BotContext) => {
   const req = await post(REQUESTS.AUTH.SIGN_UP, {
     inviterId: inviterId,
     userId: user?.id.toString(),
+    username: user?.username,
   })
 
   if (req.status === 201) {
